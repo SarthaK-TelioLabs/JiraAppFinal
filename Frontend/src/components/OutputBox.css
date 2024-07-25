@@ -1,0 +1,21 @@
+/* src/components/OutputBox.css */
+.output-box {
+    background-color: #333333;
+    color: rgb(188, 204, 65);
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message2 {
+    color: yellow;
+    font-weight: bold;
+}
+
+.bot-response {
+    color: #0d8947;
+}

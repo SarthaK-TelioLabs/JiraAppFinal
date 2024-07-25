@@ -1,0 +1,107 @@
+/* src/App.css */
+.App {
+  display: flex;
+  height: 100vh;
+  background-color: #1e1e1e;
+  /* color: white; */
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.side-panel {
+  width: 300px;
+  background-color: #333333;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.input-box {
+  display: flex;
+  margin-top: 2.5px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.output-box {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  background-color: #333333;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.user-message {
+  color: yellow;
+  font-weight: bold;
+}
+
+.bot-response {
+  color: green;
+}
+
+/* src/components/SidePanel.css */
+.side-panel {
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.logo {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.history-message {
+  margin-bottom: 10px;
+}
+
+.user-message {
+  color: yellow;
+  font-weight: bold;
+}
+
+.bot-response {
+  color: green;
+}
+
+/* src/components/Welcome.css */
+.welcome-box {
+  font-size: 14px;
+  color: #BF9553;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}

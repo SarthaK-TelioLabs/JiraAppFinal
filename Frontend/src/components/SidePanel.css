@@ -1,0 +1,64 @@
+/* src/components/SidePanel.css */
+.side-panel {
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    padding-right: 20px; /* Added right padding to create space */
+    overflow-y: auto;
+}
+
+.logo {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.history-box {
+    background-color: #444444;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px; /* Added right margin for spacing */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    max-width: calc(100% - 20px); /* Adjusted max-width for the right padding */
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+.user-message {
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.history-box:hover .user-message {
+    overflow: visible;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.full-message {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: 100%;
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+}
+
+.history-box.expanded .full-message {
+    display: block; /* Show full message and output when expanded */
+}
